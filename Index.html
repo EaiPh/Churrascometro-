@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+   
+   <title>Churrascometro</title>
+   <meta name="description" content="tenha uma ideia de quantos kg de carne, quantas latas de Cerveja e litros de Refrigerante você terá que comprar para um churrasco; baseado em quantos homens, mulheres e crianças estarão no churrasco e quanto tempo vai durrar" />
+</head>
+<body>
+   <h1>Churrascometro</h1>
+   
+   <main>
+      <div class="container">
+         <input type="number" name="man" id="man" placeholder="Homem" />
+         <input type="number" name="women" id="women" placeholder="Mulher" />
+         <input type="number" name="kid" id="kid" placeholder="Criança" />
+         <input type="number" name="duration" id="duration" placeholder="Duração" />
+         <input type="button" id="button" value="calcular" />
+      </div>
+      <table>
+         <thead>
+            <tr>
+               <th></th>
+               <th>Carne(kg)</th>
+               <th>Cerveja(latas)</th>
+               <th>Refrigerante(l)</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Homem</td>
+               <td id="mMeat"></td>
+               <td id="mBeer"></td>
+               <td id="mSoda"></td>
+            </tr>
+            <tr>
+               <td>Mulher</td>
+               <td id="wMeat"></td>
+               <td id="wBeer"></td>
+               <td id="wSoda"></td>
+            </tr>
+            <tr>
+               <td>Criança</td>
+               <td id="kMeat"></td>
+               <td id="kBeer"></td>
+               <td id="kSoda"></td>
+            </tr>
+            <tr>
+               <td>Total</td>
+               <td id="tMeat"></td>
+               <td id="tBeer"></td>
+               <td id="tSoda"></td>
+            </tr>
+         </tbody>
+      </table>
+   </main>
+</body>
+</html>
